@@ -1,0 +1,13 @@
+{
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": false,
+      "printWidth": 200,
+      "singleQuote": true
+    }
+  },
+  "prettier.eslintIntegration": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 200,
+  "prettier.singleQuote": true
+}
