@@ -8,19 +8,19 @@
         </div>
       </header>
       <div class="tabs">
-        <div class="tab">
-          <div class="select">推荐音乐</div>
-        </div>
-        <div class="tab">
+        <router-link class="tab" tag="div" to="/home/recommend">
+          <div>推荐音乐</div>
+        </router-link>
+        <router-link class="tab" tag="div" to="/home/hotsearch">
           <div>热歌榜</div>
-        </div>
-        <div class="tab">
-          <div>热搜</div>
-        </div>
+        </router-link>
+        <router-link class="tab" tag="div" to="/home/search">
+          <div>搜索</div>
+        </router-link>
       </div>
     </div>
     <div class="content">
-      <router-view></router-view>11111111111
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -40,10 +40,10 @@ export default {}
     right: 0;
     background: #fff;
     position: fixed;
+    z-index: 9999;
   }
   .header {
     height: 60px;
-
     background: #f72400;
     display: flex;
     align-items: center;
@@ -74,7 +74,9 @@ export default {}
       > div {
         padding: 0 4px;
       }
-      & .select {
+    }
+    & .router-link-active {
+      > div {
         border-bottom: 2px solid #f72400;
       }
     }
